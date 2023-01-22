@@ -4,3 +4,5 @@ brain-games: #запуск игры без глобальной установк
 			node bin/brain-games.js
 publish: #отладка публикации
 			npm publish --dry-run
+lint: #запускает проверку стиля 
+		npx eslint .
