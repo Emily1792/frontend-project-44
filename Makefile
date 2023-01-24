@@ -6,3 +6,5 @@ publish: #отладка публикации
 			npm publish --dry-run
 lint: #запускает проверку стиля 
 		npx eslint .
+brain-even: #запуск 1 игры
+		node bin/brain-even.js
