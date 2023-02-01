@@ -8,3 +8,5 @@ lint: #запускает проверку стиля
 		npx eslint .
 brain-even: #запуск 1 игры
 		node bin/brain-even.js
+brain-calc: #запуск 2 игры
+		node bin/brain-calc.js

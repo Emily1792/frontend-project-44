@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
+import gameWelcome from './cli.js';
 
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${userName}!`);
+const userName = gameWelcome();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 function randomNumber(min, max) {
