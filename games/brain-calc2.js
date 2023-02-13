@@ -1,9 +1,10 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-loop-func */
 import readlineSync from 'readline-sync';
-import gameWelcome from './cli.js';
+import theTrigger from '../src/index.js';
 
-const userName = gameWelcome();
+const userName = theTrigger();
+
 console.log('What is the result of the expression?');
 function randomNumber(min, max) {
   const r = Math.random() * (max - min) + min;

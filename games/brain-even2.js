@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import gameWelcome from './cli.js';
+import theTrigger from '../src/index.js';
 
-const userName = gameWelcome();
+const userName = theTrigger();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 function randomNumber(min, max) {

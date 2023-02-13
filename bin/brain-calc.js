@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import theSecondGame from '../src/cil2.js';
+import theSecondGame from '../games/brain-calc2.js';
 
 theSecondGame();
