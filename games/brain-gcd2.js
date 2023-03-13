@@ -8,7 +8,7 @@ console.log('Find the greatest common divisor of given numbers.');
 function randomNumber(min, max) {
   const r = Math.random() * (max - min) + min;
   return Math.floor(r);
-};
+}
 
 const theThirdGame = () => {
   for (let i = 0; i < 3; i += 1) {
