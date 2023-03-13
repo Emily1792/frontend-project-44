@@ -10,3 +10,5 @@ brain-even: #запуск 1 игры
 		node bin/brain-even.js
 brain-calc: #запуск 2 игры
 		node bin/brain-calc.js
+brain-gcd: #запуск 3 игры
+		node bin/brain-gcd.js
