@@ -12,3 +12,5 @@ brain-calc: #запуск 2 игры
 		node bin/brain-calc.js
 brain-gcd: #запуск 3 игры
 		node bin/brain-gcd.js
+brain-progression: #запуск 4 игры
+        node bin/brain-progression.js
