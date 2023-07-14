@@ -1,39 +1,42 @@
-import readlineSync from 'readline-sync';
-import theTrigger from '../src/index.js';
+import playGames from '../src/index.js';
 
-const userName = theTrigger();
-
-console.log('What number is missing in the progression?');
+const gameExercise = 'What number is missing in the progression?';
 
 function randomNumber(min, max) {
   const r = Math.random() * (max - min) + min;
   return Math.floor(r);
 }
 
-const theThirdGame = () => {
-  for (let i = 0; i < 3; i += 1) {
-    let number1 = randomNumber(1, 100);
-    let number2 = randomNumber(1, 100);
-    console.log(`Question: ${number1} ${number2}`);
-    const userResponse = Number(readlineSync.question('Your answer: '));
-    const commonDivisor = () => {
-      while (number1 !== 0 && number2 !== 0) {
-        if (number1 > number2) {
-          number1 %= number2;
-        } else {
-          number2 %= number1;
-        }
-      }
-      return number1 + number2;
-    };
-    if (commonDivisor() === userResponse) {
-      console.log('Correct!');
-    } else {
-      console.log(`${userResponse} is wrong answer ;(. Correct answer was ${commonDivisor()}.\nLet's try again, ${userName}!`);
-      return;
-    }
+const getNumberSeries = (start, step, length, stek = []) => {
+  let i = 0;
+  let nextNumber = start;
+  while (i < length) {
+    nextNumber += step;
+    stek.push(nextNumber);
+    i += 1;
   }
-  console.log(`Congratulations, ${userName}!`);
 };
 
-export default theThirdGame;
+const theFourthGame = () => {
+  const numbers = [];
+  const number1 = randomNumber(1, 100);
+  const numberStep = randomNumber(1, 11);
+  const numberLength = randomNumber(5, 11);
+
+  getNumberSeries(number1, numberStep, numberLength, numbers);
+
+  const replacementNumber = randomNumber(0, numbers.length);
+  const invisibleNumber = numbers[replacementNumber];
+  const correctAnswer = String(invisibleNumber);
+  numbers[replacementNumber] = '..';
+  const questionOutput = numbers.join(' ');
+  const question = `Question: ${questionOutput}\nYour answer: `;
+
+  return [question, correctAnswer];
+};
+
+const go = () => {
+  playGames(theFourthGame, gameExercise);
+};
+
+export default go;

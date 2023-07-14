@@ -1,11 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-loop-func */
-import readlineSync from 'readline-sync';
-import theTrigger from '../src/index.js';
+import playGames from '../src/index.js';
 
-const userName = theTrigger();
+const gameExercise = 'What is the result of the expression?';
 
-console.log('What is the result of the expression?');
 function randomNumber(min, max) {
   const r = Math.random() * (max - min) + min;
   return Math.floor(r);
@@ -17,34 +15,34 @@ const randomOperators = () => {
   return operators[indexOperators];
 };
 
-const theSecondGame = () => {
-  for (let i = 0; i < 3; i += 1) {
-    const number1 = randomNumber(1, 100);
-    const number2 = randomNumber(1, 100);
-    const operatorRand = randomOperators();
-    console.log(`Question: ${number1} ${operatorRand} ${number2}`);
-    const userResponse = Number(readlineSync.question('Your answer: '));
-    const calculation = () => {
-      let result;
-      switch (operatorRand) {
-        case '+':
-          return number1 + number2;
-        case '-':
-          return number1 - number2;
-        case '*':
-          return number1 * number2;
-        default:
-          break;
-      }
-      return result;
-    };
-    if (calculation() === userResponse) {
-      console.log('Correct!');
-    } else {
-      console.log(`${userResponse} is wrong answer ;(. Correct answer was ${calculation()}.\nLet's try again, ${userName}!`);
-      return;
-    }
+const calculation = (meaning1, meaning2, operatorRand) => {
+  let result;
+  switch (operatorRand) {
+    case '+':
+      return meaning1 + meaning2;
+    case '-':
+      return meaning1 - meaning2;
+    case '*':
+      return meaning1 * meaning2;
+    default:
+      break;
   }
-  console.log(`Congratulations, ${userName}!`);
+  return result;
 };
-export default theSecondGame;
+
+const theSecondGame = () => {
+  const number1 = randomNumber(1, 100);
+  const number2 = randomNumber(1, 100);
+  const operatorRand = randomOperators();
+  const question = `Question: ${number1} ${operatorRand} ${number2}\nYour answer: `;
+
+  const correctAnswer = String(calculation(number1, number2, operatorRand));
+
+  return [question, correctAnswer];
+};
+
+const go = () => {
+  playGames(theSecondGame, gameExercise);
+};
+
+export default go;

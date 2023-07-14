@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import theSecondGame from '../games/brain-calc2.js';
+import go from '../games/brain-calc2.js';
 
-theSecondGame();
+go();
