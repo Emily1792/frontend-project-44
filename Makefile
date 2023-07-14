@@ -14,3 +14,5 @@ brain-gcd: #запуск 3 игры
 		node bin/brain-gcd.js
 brain-progression: #запуск 4 игры
 	    node bin/brain-progression.js
+brain-prime: #запуск 5 игры
+	    node bin/brain-prime.js
