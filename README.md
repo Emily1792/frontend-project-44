@@ -1,5 +1,5 @@
 # Brain-games
-### Hexlet tests and linter status:
+## Hexlet tests and linter status:
 [![Actions Status](https://github.com/Emily1792/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Emily1792/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/11ba6b4badebe2fbb7e8/maintainability)](https://codeclimate.com/github/Emily1792/frontend-project-44/maintainability)
 
@@ -31,7 +31,7 @@ npm ci
 ```bash
 npm link
 ```
-##Start the games
+## Start the games
 Definition of an even number.
 ```bash
 make brain-even
@@ -58,6 +58,7 @@ make brain-prime
 ```
 ## Demonstration of the work of games
 Definition of an even number.
+
 [![asciicast](https://asciinema.org/a/554084.svg)](https://asciinema.org/a/554084)
 
 Calculator. Arithmetic expressions that need to be calculated.
@@ -65,10 +66,13 @@ Calculator. Arithmetic expressions that need to be calculated.
 [![asciicast](https://asciinema.org/a/556522.svg)](https://asciinema.org/a/556522)
 
 Determination of the greatest common divisor.
+
 [![asciicast](https://asciinema.org/a/wBPgdqbP6YHFm1skOdjwm8IXv.svg)](https://asciinema.org/a/wBPgdqbP6YHFm1skOdjwm8IXv)
 
 Progression. Search for missing numbers in a sequence of numbers.
+
 [![asciicast](https://asciinema.org/a/6o36gNMDaLta9jD8QCowLIfzq.svg)](https://asciinema.org/a/6o36gNMDaLta9jD8QCowLIfzq)
 
 Definition of a prime number.
+
 [![asciicast](https://asciinema.org/a/ABsDwxfwKC38g6sAcA95YeGr1.svg)](https://asciinema.org/a/ABsDwxfwKC38g6sAcA95YeGr1)
