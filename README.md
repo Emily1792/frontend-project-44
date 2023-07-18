@@ -7,12 +7,12 @@
 Mind Games is a set of five console games built on the principle of popular mobile applications for brain pumping. Each game asks questions that need to be answered correctly. After three correct answers, it is considered that the game is over. Incorrect answers end the game and offer to go through it again.
 
 ## System requirement
-Operating System: Windows 7 or higher
-Processor (CPU): with two or more physical cores, supporting SSE2 technology
-RAM: 2 GB
-Video Adapter: NVIDIA GeForce 8600, ATI Radeon HD 4550
-Free hard disk space: ~55 GB
-Internet connection speed: 256 Kbit/s
+* Operating System: Windows 7 or higher
+* Processor (CPU): with two or more physical cores, supporting SSE2 technology
+* RAM: 2 GB
+* Video Adapter: NVIDIA GeForce 8600, ATI Radeon HD 4550
+* Free hard disk space: ~55 GB
+* Internet connection speed: 256 Kbit/s
 
 ## Installation instructions
 1. Install Node.js of the latest version to the system globally
