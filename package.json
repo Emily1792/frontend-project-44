@@ -10,7 +10,11 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js.js"
   },
-  "description": "[![Actions Status](https://github.com/Emily1792/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Emily1792/frontend-project-44/actions)",
+  "description": "Mind Games is a set of five console games built on the 
+principle of popular mobile applications for brain pumping. Each game 
+asks questions that need to be answered correctly. After three correct 
+answers, it is considered that the game is over. Incorrect answers end 
+the game and offer to go through it again.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
