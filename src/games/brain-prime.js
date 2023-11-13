@@ -1,4 +1,4 @@
-import playGames from '../src/index.js';
+import playGames from '../index.js';
 
 const gameExercise = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

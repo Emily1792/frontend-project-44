@@ -1,4 +1,4 @@
-import playGames from '../src/index.js';
+import playGames from '../index.js';
 
 const gameExercise = 'Find the greatest common divisor of given numbers.';
 

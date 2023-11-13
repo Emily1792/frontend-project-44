@@ -1,6 +1,4 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-loop-func */
-import playGames from '../src/index.js';
+import playGames from '../index.js';
 
 const gameExercise = 'What is the result of the expression?';
 

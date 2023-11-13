@@ -1,4 +1,4 @@
-import playGames from '../src/index.js';
+import playGames from '../index.js';
 
 const gameExercise = 'Answer "yes" if the number is even, otherwise answer "no".';
 
